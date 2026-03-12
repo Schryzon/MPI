@@ -5,7 +5,6 @@
 #define N 4096
 #define COMM MPI_COMM_WORLD
 
-
 __global__
 void conv_kernel(float *img, float *kernel, float *out, int width){
     int x = blockIdx.x * blockDim.x + threadIdx.x;
